@@ -1,0 +1,17 @@
+# Ignorar arquivos de configuração sensíveis
+.env
+
+# Ignorar diretórios de dados persistentes do Docker*.log
+
+# Ignorar arquivos de build e outros arquivos temporários
+node_modules/
+dist/
+build/
+
+# Ignorar arquivos de IDEs e editores
+.vscode/
+.idea/
+
+# Ignorar arquivos de sistema
+.DS_Store
+*.swp
