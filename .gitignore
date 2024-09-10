@@ -15,3 +15,4 @@ build/
 # Ignorar arquivos de sistema
 .DS_Store
 *.swp
+data/

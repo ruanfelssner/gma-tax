@@ -20,11 +20,11 @@ jobs:
 
     - name: Copy files to EC2
       run: |
-        scp -r -o StrictHostKeyChecking=no ./* ubuntu@44.203.237.159:/home/gma
+        scp -r -o StrictHostKeyChecking=no ./* ubuntu@44.200.222.199:/home/gma
 
     - name: Restart Docker Compose on EC2
       run: |
-        ssh -o StrictHostKeyChecking=no ubuntu@44.203.237.159 << 'EOF'
+        ssh -o StrictHostKeyChecking=no ubuntu@44.200.222.199 << 'EOF'
         cd /home/gma
         docker-compose down
         docker-compose up -d
